@@ -1,0 +1,73 @@
+\ifx\allfiles\undefined
+\documentclass[UTF8]{ctexrep}
+\usepackage{CJK}
+\usepackage{titlesec}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{listings} 
+\usepackage{amssymb}
+\usepackage{geometry}
+\newgeometry{top=3.5cm, bottom=2.5cm}
+\renewcommand\thesection
+    {{Problem \Alph{section}.}}
+    
+
+% 导言区结束
+
+\begin{document}
+% 英文和中文的字体
+
+\tt
+\CJKfamily{song}
+
+% 用于拆分文件的宏
+\def\allfiles{}
+
+% 标题的页面，包含ICPC标志，作者，时间以及校徽
+\begin{titlepage}
+    \centering
+    \ 
+    \includegraphics[width=6cm]{{icpc.jpg}}\\
+    \vspace{1.5cm}
+    {\huge 第七届ECNU Coder程序设计竞赛\ 高年级组}\\   
+    \vspace{1.5cm}
+    {\Large 作者：储德明\ 陈锴\ 王玮鑫}\\
+    \vspace{0.5cm}
+    {\Large 2016年5月25日}\\
+    \vspace{2cm}
+    \includegraphics[width=6cm]{{ecnu.jpg}}
+\end{titlepage}
+
+
+% 空白页
+\pagebreak
+\  
+\thispagestyle{empty}
+\pagebreak
+
+% 所有的试题
+\input{gao}
+\pagebreak
+\input{gcd}
+\pagebreak
+\input{shuzhengfangxing}
+\pagebreak
+\input{angao}
+\pagebreak
+\input{xianduanshu++}
+\pagebreak
+\input{ruanjiananzhuang}
+\pagebreak
+\input{fanggequshu}
+\pagebreak
+\input{jiheweihu}
+\pagebreak
+\input{gezituse}
+\pagebreak
+\input{qujianchaxun}
+\pagebreak
+\input{xianduanshu}
+\pagebreak
+
+
+\end{document}

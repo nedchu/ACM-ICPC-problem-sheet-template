@@ -1,0 +1,63 @@
+\ifx\allfiles\undefined
+\documentclass[UTF8]{ctexrep}
+\usepackage{CJK}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{geometry}
+\newgeometry{top=3.5cm, bottom=3cm}
+\renewcommand\thesection
+    {{\Alph{section}}}
+
+\begin{document}
+\tt
+\CJKfamily{song}
+\fi
+% --封印线--
+
+
+\section{区间查询}
+\subsection*{描述}
+木下吉子有一个长度为$n$的数组$A$，接着有$m$个查询。
+
+每个查询给一个区间$[L,R](1\leqslant L\leqslant R\leqslant n)$，请你输出该区间的最大值$max$，最左端最大值的下标$l$和最右端最大值的下标$r$。
+
+\subsection*{输入数据}
+第一行为测试数据的组数$T(1\leqslant T\leqslant 10)$
+
+每组数据第一行有一个整数$n(1\leqslant n\leqslant 10^6)$
+
+第二行共$n$个整数，其中第$i$个整数是$A_i(-10^9\leqslant A_i\leqslant 10^9)$
+
+第三行，一个整数$m(1\leqslant m\leqslant 10^5)$
+
+接下去$m$行，每行两个整数$L$和$R(1\leqslant L\leqslant R\leqslant n)$
+
+\subsection*{输出数据}
+对于每组测试数据，输出$m$行，每行3个整数$max,l,r,$用空格隔开。
+
+每组测试数据结束后再输出一个空行。
+
+\subsection*{样例输入}
+\noindent 2\\
+5\\
+-1 9 2 9 3\\
+2\\
+2 5\\
+1 1\\
+3\\
+3 4 5\\
+1\\
+1 3
+
+\subsection*{样例输出}
+\noindent 9 2 4\\
+-1 1 1\\
+
+\noindent 5 3 3
+
+
+% --封印线--
+\ifx\allfiles\undefined
+\end{document}
+\fi

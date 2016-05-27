@@ -1,0 +1,46 @@
+\ifx\allfiles\undefined
+\documentclass[UTF8]{ctexart}
+\usepackage{CJK}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{geometry}
+\newgeometry{top=3.5cm, bottom=3cm}
+\renewcommand\thesection
+    {{\Alph{section}}}
+
+\begin{document}
+\tt
+\CJKfamily{song}
+\fi
+% --封印线--
+
+
+\section{格子涂色}
+\subsection*{描述}
+木下吉子有一个$n\times n$的方格，一开始所有格子都是没有涂色的。每一轮，她会随机选择所有格子中的一个点(x,y)作为左上角，并以点($n,n$)为右下角，将这两个点所组成的矩形内的所有格子涂色。
+求经过$k$轮操作后涂色格子数目的期望值。
+
+
+\subsection*{输入数据}
+第一行为测试数据的组数$T(T\leqslant 50)$
+
+每组测试数据有两个整数$n$和$k(1\leqslant n\leqslant 1000,1\leqslant k\leqslant 100)$
+
+\subsection*{输出数据}
+对于每组测试数据，输出一行结果，四舍五入保留两位小数。
+
+\subsection*{样例输入}
+\noindent 2\\
+5 2\\
+2 1
+
+\subsection*{样例输出}
+\noindent 13.16\\
+2.25
+
+
+% --封印线--
+\ifx\allfiles\undefined
+\end{document}
+\fi

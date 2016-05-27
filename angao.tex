@@ -1,0 +1,52 @@
+\ifx\allfiles\undefined
+\documentclass[UTF8]{ctexrep}
+\usepackage{CJK}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{geometry}
+\newgeometry{top=3.5cm, bottom=3cm}
+\renewcommand\thesection
+    {{\Alph{section}}}
+
+\begin{document}
+\tt
+\CJKfamily{song}
+\fi
+% --封印线--
+
+
+\section{暗之高年级竞赛}
+\subsection*{描述}
+木下吉子听说高年级竞赛三人一支队伍，规则是每个队伍中至少有两人在一个寝室。为了增加气氛，木下吉子打算举办暗之高年级竞赛，其规则与高年级竞赛背道而驰，每个队伍的三个必须来自不同寝室。
+
+有$n$个人，$m$个寝室，给定每个人的寝室号$a_i(1\leqslant a_i \leqslant m)$，问最多能够组成多少支队伍。
+
+需要注意的是为了公平竞争，所有队伍都得由三人组成。
+
+\subsection*{输入数据}
+第一行为数据的组数$T(T\leqslant 100)$
+
+每组数据第一行为$n,m(1\leqslant n,m\leqslant 10^3)$
+
+接下一行有$n$个数$a_1\cdots a_n(1\leqslant a_i\leqslant m)$，$a_i$是第$i$个人的寝室编号。
+
+\subsection*{输出数据}
+一行数字，最多多少支队伍。
+
+\subsection*{样例输入}
+\noindent 2\\
+3 3\\
+1 2 3\\
+6 4\\
+1 1 2 2 3 4
+
+\subsection*{样例输出}
+\noindent 1\\
+2
+
+
+% --封印线--
+\ifx\allfiles\undefined
+\end{document}
+\fi

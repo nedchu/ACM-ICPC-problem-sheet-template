@@ -1,0 +1,51 @@
+\ifx\allfiles\undefined
+\documentclass[UTF8]{ctexrep}
+\usepackage{CJK}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{geometry}
+\newgeometry{top=3.5cm, bottom=3cm}
+\renewcommand\thesection
+    {{\Alph{section}}}
+
+\begin{document}
+\tt
+\CJKfamily{song}
+\fi
+% --封印线--
+
+
+\section{软件安装}
+\subsection*{描述}
+木下吉子有一些软件包要安装， 这些软件之间存在依赖关系， 如果包$x$依赖包$y$， 则$y$必须在$x$之前安装。他想知道自己能否顺利将这些软件全部成功安装。
+
+\subsection*{输入数据}
+第一行为测试数据的组数$T(1\leqslant T\leqslant 20)$
+
+每组数据中第一行为两个整数$n$和$m$， 表示软件包的数目和依赖关系数目$(1\leqslant n, m\leqslant 10^5)$
+
+接下去$m$行， 每行两个整数$x$和$y$， 表示$x$依赖$y(1\leqslant x, y\leqslant n)$
+
+\subsection*{输出数据}
+对于每组测试数据，如果能够全部成功安装,输出YES,否则输出NO。
+
+\subsection*{样例输入}
+\noindent 2\\
+3 3\\
+1 2\\
+2 3\\
+3 1\\
+3 2\\
+1 2\\
+2 3
+
+\subsection*{样例输出}
+\noindent NO\\
+YES
+
+
+% --封印线--
+\ifx\allfiles\undefined
+\end{document}
+\fi

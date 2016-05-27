@@ -1,0 +1,46 @@
+\ifx\allfiles\undefined
+\documentclass[UTF8]{ctexrep}
+\usepackage{CJK}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{geometry}
+\newgeometry{top=3.5cm, bottom=3cm}
+\renewcommand\thesection
+    {{\Alph{section}}}
+
+\begin{document}
+\tt
+\CJKfamily{song}
+\fi
+% --封印线--
+
+
+\section{方格取数}
+\subsection*{描述}
+木下吉子有一个$n\times n$的网格卡片，每个方格中含有一个数字。木下吉子想到了一个游戏，他想以最小代价划掉所有网格中的数字。每次在网格中没被划掉的位置中选择一个位置，然后划掉这个位置所在的行和列的所有方格，把选定位置的数字累加到代价中。同一位置可以被划掉多次，但被划掉的位置不能被选择，开始所有数字没被划掉，初始代价为0。
+
+\subsection*{输入数据}
+第一行为数据的组数$T(T\leqslant 100)$
+
+每组数据第一行为网格的规模$n(n\leqslant 100)$
+
+接下来$n$行每行$n$个数字，$a_{i,j}$表示网格中$i$行$j$列的数字$(1\leqslant a_{i,j}\leqslant 10^6)$
+
+\subsection*{输出数据}
+一行数字，划掉所有数字的最小代价。
+
+\subsection*{样例输入}
+\noindent 1\\
+2\\
+1 2\\
+2 5
+
+\subsection*{样例输出}
+\noindent 4
+
+
+% --封印线--
+\ifx\allfiles\undefined
+\end{document}
+\fi

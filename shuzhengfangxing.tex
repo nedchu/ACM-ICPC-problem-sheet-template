@@ -1,0 +1,60 @@
+\ifx\allfiles\undefined
+\documentclass[UTF8]{ctexrep}
+\usepackage{CJK}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{geometry}
+\newgeometry{top=3.5cm, bottom=3cm}
+\renewcommand\thesection
+    {{\Alph{section}}}
+
+\begin{document}
+\tt
+\CJKfamily{song}
+\fi
+% --封印线--
+
+
+\section{数正方形}
+\subsection*{描述}
+木下吉子有一个$n\times n$的方阵，元素为'.'或'*'。
+
+木下吉子想知道有多少用'*'构成的正方形。
+
+可以使用左上角坐标$x,y$以及边长$a$来描述正方形$(a\geqslant 1)$
+
+则有$g_{x+i,y}=g_{x,y+i}=g_{x+a-1,y+i}=g_{x+i,y+a-1}=$'*'$(0\leqslant i<a)$
+
+\subsection*{输入数据}
+第一行为测试数据组数$T(T\leqslant 30)$
+
+每组数据第一行为$n$，即矩阵的大小$(1\leqslant n\leqslant 1000)$
+
+接下来$n$行每行有$n$个字符，为'.'或'*'。
+
+\subsection*{输出数据}
+给定矩阵中正方形的个数。
+
+\subsection*{样例输入}
+\noindent 2
+3\\
+****\\
+***.\\
+...\\
+5 \\
+****** \\
+****** \\
+****.. \\
+***... \\
+******
+
+\subsection*{样例输出}
+\noindent 6\\
+29
+
+
+% --封印线--
+\ifx\allfiles\undefined
+\end{document}
+\fi

@@ -1,0 +1,75 @@
+\ifx\allfiles\undefined
+\documentclass[UTF8]{ctexrep}
+\usepackage{CJK}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{geometry}
+\newgeometry{top=3.5cm, bottom=3cm}
+\renewcommand\thesection
+    {{\Alph{section}}}
+
+\begin{document}
+\tt
+\CJKfamily{song}
+\fi
+% --封印线--
+
+
+\section{集合维护}
+\subsection*{描述}
+木下吉子有一个集合$S$，初始有$S=\varnothing$ 。木下吉子定义了两种集合上的操作。
+
+第一种是交操作，表示为$1\ P$，执行$S\leftarrow S\bigcap P$。
+
+第二种是并操作，表示为$2\ P$，执行$S\leftarrow  S\bigcup P$。
+
+$P$是一个区间。木下吉子想要知道经过$m$次操作后$S$的情况。
+
+\subsection*{输入数据}
+第一行为数据的组数$T(T\leqslant 150)$
+
+每组数据第一行为$m$代表对$S$操作的次数$(m\leqslant 100)$
+
+接下来$m$行按照顺序给出对集合的操作，每次操作为$1\ P$或者$2\ P$。
+
+$P$的格式为$Ll,rR$其中$L\in\big\{(,[\big\} \qquad 
+0\leqslant l,r \leqslant 100 \qquad 
+R\in\big\{),]\big\}$ 
+
+\subsection*{输出数据}
+每组数据输出一行，表示集合的情况。
+
+空集输出"empty set"。
+
+如果集合中有多段，使用U(英文字母大写U)连接每段集合，代表并。
+
+集合以最少集合的并集输出。
+
+\subsection*{样例输入}
+\noindent 4\\
+1\\
+1 (1,2)\\
+2\\
+2 (1,2)\\
+2 (2,3)\\
+2\\
+2 (1,2)\\
+2 [2,3)\\
+3\\
+2 [2,3]\\
+2 [4,5]\\
+1 (2,5)
+
+\subsection*{样例输出}
+\noindent empty set\\
+(1,2)U(2,3)\\
+(1,3)\\
+(2,3]U[4,5)
+
+
+
+% --封印线--
+\ifx\allfiles\undefined
+\end{document}
+\fi
