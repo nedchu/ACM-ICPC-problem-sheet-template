@@ -1,0 +1,32 @@
+%以下为头部区
+%注意\begin{document}被包含在文件内
+
+%使用的包
+\usepackage{CJK}
+\usepackage{titlesec}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{listings} 
+\usepackage{amssymb}
+\usepackage{geometry}
+\usepackage{xcolor}
+%控制边距
+\newgeometry{top=3.5cm, bottom=2.5cm}
+%控制section的格式
+\renewcommand\thesection {{Problem \Alph{section}.}}
+
+%控制代码的格式
+\lstset{
+keywordstyle=\color{blue!70},
+commentstyle=\color{red!50!green!50!blue!50},
+rulesepcolor=\color{red!20!green!20!blue!20},
+morekeywords={*,define,*,include...},
+stringstyle=\color{purple},
+tabsize=2,
+escapeinside=``,
+}
+
+\begin{document}
+%英文和中文的字体
+\ttfamily
+\CJKfamily{song}
